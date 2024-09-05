@@ -73,7 +73,7 @@ export default function Component() {
                 Cargando items...
               </div>
             }
-          <Stack direction="horizontal" gap={2} className="justify-content-center">
+          <Stack direction="horizontal" gap={2} className="justify-content-md-center overflow-auto py-2">
             {serviceItems.map((item, index) => {
               return (
                 <Badge key={index} bg="dark">{item.title}</Badge>
@@ -95,10 +95,10 @@ export default function Component() {
             }
             {portfolioItems.map((item, index) => {
               return (
-                <div className="col-4" key={index}>
+                <div className="col-md-4 col-sm-12" key={index}>
                   <div className="p-2">
                     <h4 className="text-xl font-semibold mb-2">{item.title}</h4>
-                    <div dangerouslySetInnerHTML={{ __html: item.description }}></div>
+                    <div className="text-break" dangerouslySetInnerHTML={{ __html: item.description }}></div>
                     <img
                       src={item.imageUrl}
                       alt="Portfolio screenshot"
