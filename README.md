@@ -23,4 +23,5 @@ _Follow Firebase steps to configure Hosting_
 Once you are logged in:
 
 1. Build image locally through Vite build: ```npm run build```
-2. Deploy files to Firebas hoting: ```firebase deploy```
+2. Move to folder dist: ```cd dist```
+3. And deploy files to Firebas hosting running: ```firebase deploy```
